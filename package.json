@@ -1,0 +1,49 @@
+{
+  "name": "Cryptocurrency",
+  "author": "Erlan Lucio",
+  "Issues": "https://github.com/erlanlucio/CriptoCoins/issues",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android --port 8084",
+    "ios": "react-native run-ios --port 8084",
+    "start": "react-native start --port 8084",
+    "dev:android": "react-native run-android && open \"rndebugger://set-debugger-loc?host=localhost&port=8084\"",
+    "dev:ios": "react-native run-ios && open \"rndebugger://set-debugger-loc?host=localhost&port=8084\"",
+    "build:android": "npm run clean:android && mkdir -p ./android/app/build/intermediates/assets/debug && react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug && cd android && ./gradlew assemble && cp -r ./android/app/build/outputs/apk/ ./dist",
+    "clean:android": "rm -rf ./android/app/build && rm -rf ./dist",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "remotedev": {
+    "hostname": "localhost",
+    "port": 5678
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "react": "16.11.0",
+    "react-native": "0.62.0",
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-skeleton-placeholder": "^2.0.3",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
+    "@react-native-community/eslint-config": "^1.0.0",
+    "babel-jest": "^25.2.3",
+    "eslint": "^6.8.0",
+    "jest": "^25.2.3",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.11.0",
+    "redux-logger": "^3.0.6",
+    "remote-redux-devtools": "^0.5.16",
+    "remotedev-rn-debugger": "^0.8.4"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
