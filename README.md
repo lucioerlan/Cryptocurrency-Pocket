@@ -1,8 +1,7 @@
-                                                    Cryptocurrency Watcher 🤔
-
+ <p align="center">
+ Cryptocurrency Watcher 🤔
+  
 <br>
-
-<p align="center">
 <img src="https://user-images.githubusercontent.com/47280551/77914688-b06a1c80-726c-11ea-987a-413eacb269c8.gif" width="30%"/>
 <br>
 
