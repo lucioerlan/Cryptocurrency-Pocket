@@ -20,7 +20,7 @@
     "port": 5678
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.27.2",
     "react": "16.11.0",
     "react-native": "0.62.0",
     "react-native-linear-gradient": "^2.5.6",
